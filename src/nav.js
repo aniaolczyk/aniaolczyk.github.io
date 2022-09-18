@@ -36,19 +36,19 @@ export default function Nav() {
         <div id="navbar" className={`navbar-menu ${mobileExpanded ? "is-active" : ""}`}>
             <div className="navbar-start navbar-center">
               <div className="navbar-item navbar-ania-item">
-                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in navbar-ania-item" to="/#/about">o mnie</NavLink>
+                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in navbar-ania-item" to="/about">o mnie</NavLink>
               </div>
           
               <div className="navbar-item navbar-ania-item">
-                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/#/music">muzyka</NavLink>
+                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/music">muzyka</NavLink>
               </div>
           
               <div className="navbar-item navbar-ania-item">
-                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/#/concerts">koncerty</NavLink>
+                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/concerts">koncerty</NavLink>
               </div>
           
               <div className="navbar-item navbar-ania-item">
-                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/#/contact">kontakt</NavLink>
+                <NavLink activeClassName="navbar-in-active" onClick={() => setMobileExpanded(false)} className="navbar-in" to="/contact">kontakt</NavLink>
               </div>
             </div>
           </div>
