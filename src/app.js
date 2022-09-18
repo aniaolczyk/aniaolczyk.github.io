@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
-  Link,
-  useLocation,
 } from "react-router-dom";
 import "./style.css"
 

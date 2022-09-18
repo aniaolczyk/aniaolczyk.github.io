@@ -1,7 +1,7 @@
 {
   "name": "aniaolczyk",
   "version": "5.0.0",
-  "homepage": "https://aniaolczyk.com",
+  "homepage": "https://www.aniaolczyk.com",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
