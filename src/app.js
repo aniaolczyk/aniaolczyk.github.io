@@ -18,16 +18,16 @@ export default function App() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/about">
+      <Route path="/#/about">
         <About />
       </Route>
-      <Route path="/music">
+      <Route path="/#/music">
         <Music />
       </Route>
-      <Route path="/concerts">
+      <Route path="/#/concerts">
         <Concerts />
       </Route>
-      <Route path="/contact">
+      <Route path="/#/contact">
         <Contact />
       </Route>
     </Switch>
