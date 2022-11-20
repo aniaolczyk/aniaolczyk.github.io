@@ -47,14 +47,13 @@ function About() {
      width="500"
      height="500" />
           <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
-          <br>
+          <br/>
           Dzięki za zapisanie mojego nowego singla!
           W dniu premiery zapraszam na Spotify i inne platformy streamingowe.
           Na YouTube pojawi się również teledysk!
-          <br>
-          <br>
+          <br/>
+          <br/>
           <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
-          <link>
         </p>
       </div>
     </section>
