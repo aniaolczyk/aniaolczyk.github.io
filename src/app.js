@@ -43,6 +43,9 @@ function About() {
           Debiutancki singiel Ani Olczyk!!!
         </h1>
         <p className="subtitle text-black">
+          <img src="toksyk.jpg"
+     width="500"
+     height="500" />
           <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
           <br>
           Dzięki za zapisanie mojego nowego singla!
