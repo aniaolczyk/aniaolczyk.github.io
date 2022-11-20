@@ -40,10 +40,18 @@ function About() {
     <section className="section">
       <div className="container is-fluid">
         <h1 className="title header-ania text-black">
-          O mnie
+          Debiutancki singiel Ani Olczyk!!!
         </h1>
         <p className="subtitle text-black">
-          Coming soon...
+          <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
+          <br>
+          Dzięki za zapisanie mojego nowego singla!
+          W dniu premiery zapraszam na Spotify i inne platformy streamingowe.
+          Na YouTube pojawi się również teledysk!
+          <br>
+          <br>
+          <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
+          <link>
         </p>
       </div>
     </section>
