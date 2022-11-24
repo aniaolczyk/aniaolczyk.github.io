@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  background: black;
 }
 .logo-header {
   font-weight: 900;
@@ -44,9 +45,14 @@ a.navbar-item:focus-within {
   font-weight: 600;
 }
 .background-pic {
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 40%,
-          rgba(255,255,255,1)), url(bg.jpg);
-  height: 600px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 10%,
+          rgba(0,0,0,1)), url(bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: cover;
+  width: 100vw;
+  height: 200vh;
 }
 .header-ania {
   text-transform: uppercase;
@@ -58,6 +64,12 @@ a.navbar-item:focus-within {
 }
 .text-black {
   color: black !important;
+}
+.text-toksyk {
+  color: rgb(230,190,232)
+}
+.text-toksyk-dark {
+  color: rgb(191,121,160)
 }
 @media screen and (min-width: 1023px) {
   .navbar-ania {

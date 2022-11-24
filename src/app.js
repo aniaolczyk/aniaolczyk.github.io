@@ -39,26 +39,33 @@ function About() {
   return (
     <section className="section">
       <div className="container is-fluid">
-        <h1 className="title header-ania text-black">
-          Debiutancki singiel Ani Olczyk!!!
+        <h1 className="title text-toksyk-dark">
+          Ania Olczyk - Toksyk
         </h1>
         <br/>
         <br/>
-        <p className="subtitle text-black">
-          <img src="toksyk.jpg"
-     width="500"
-     height="500" />
+        <p className="subtitle text-toksyk">
+          <a href="https://ffm.to/toksyk">
+            <img src="toksyk.jpg" width="500" height="500" />
+          </a>
           <br/>
-          <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
+          {/*<a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>*/}
+          <br/>
           <br/>
           Dzięki za zapisanie mojego nowego singla!
           <br/>
           W dniu premiery zapraszam na Spotify i inne platformy streamingowe.
           <br/>
-          Na YouTube pojawi się również teledysk!
+          Zapraszam też na mój kanał na YouTube.
           <br/>
           <br/>
-          <a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>
+          Ania Olczyk - Toksyk<br/>
+          25.11.2022<br/>
+          Godzina 18:00<br/>
+          <br/>
+          <br/>
+          <a href="https://ffm.to/toksyk"> {"<<< Link do presave >>>"} </a>
+          <br/>
         </p>
       </div>
     </section>
