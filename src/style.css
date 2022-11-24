@@ -52,7 +52,7 @@ a.navbar-item:focus-within {
   background-position: right top;
   background-size: cover;
   width: 100vw;
-  height: 200vh;
+  height: 100%;
 }
 .header-ania {
   text-transform: uppercase;
@@ -70,6 +70,23 @@ a.navbar-item:focus-within {
 }
 .text-toksyk-dark {
   color: rgb(191,121,160)
+}
+.footer-elem {
+  text-align: center;
+}
+.footer-text {
+  margin-left: 15px;
+  display: inline;
+  font-weight: bold;
+  color: aliceblue;
+}
+.footer-text > a {
+  color: aliceblue;
+
+}
+.footer {
+  float: bottom;
+  background: transparent !important;
 }
 @media screen and (min-width: 1023px) {
   .navbar-ania {
