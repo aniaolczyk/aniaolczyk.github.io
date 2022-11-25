@@ -50,7 +50,7 @@ export default function App() {
                     </div>
                     <div className="footer-elem center">
                         <SpotifyIcon/>
-                        <p className="footer-text"><a href="">Już niedługo - Ania Olczyk</a></p>
+                        <p className="footer-text"><a href="https://open.spotify.com/artist/1AfgDOc4Q0Z7LZpdQbU49y">Ania Olczyk</a></p>
                         <br/>
                     </div>
                 </div>
@@ -69,26 +69,20 @@ function About() {
                 <br/>
                 <br/>
                 <p className="subtitle text-toksyk">
-                    <a href="https://ffm.to/toksyk">
+                    <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">
                         <img src="toksyk.jpg" width="500" height="500"/>
                     </a>
                     <br/>
-                    {/*<a href="https://ffm.to/toksyk">Ania Olczyk - Toksyk</a>*/}
                     <br/>
                     <br/>
-                    Dzięki za zapisanie mojego nowego singla!
+                    Zapraszam do słuchania mojego pierwszego singla lik do Spotify <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">tu</a>
                     <br/>
-                    W dniu premiery zapraszam na Spotify i inne platformy streamingowe.
-                    <br/>
-                    Zapraszam też na mój kanał na YouTube.
-                    <br/>
+                    Już dzisiaj o godzinie 18:00 na YouTube odbędzie się premiera teledysku.
                     <br/>
                     Ania Olczyk - Toksyk<br/>
                     25.11.2022<br/>
                     Godzina 18:00<br/>
                     <br/>
-                    <br/>
-                    <a href="https://ffm.to/toksyk"> {"<<< Link do presave >>>"} </a>
                     <br/>
                 </p>
             </div>
