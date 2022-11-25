@@ -73,7 +73,13 @@ function About() {
                 <br/>
                 <p className="subtitle text-toksyk">
                     <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">
-                        <img src="toksyk.jpg" width="500" height="500"/>
+                        <img
+                            src="ania-olczyk-toksyk-single.jpg"
+                            title="Ania Olczyk - Toksyk"
+                            alt="Ania Olczyk - Toksyk Single cover art, rodzina na tle fotograficznym."
+                            width="500"
+                            height="500"
+                        />
                     </a>
                     <br/>
                     <br/>
