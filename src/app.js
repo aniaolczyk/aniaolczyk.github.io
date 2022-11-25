@@ -30,6 +30,9 @@ export default function App() {
                 <Route path="/contact">
                     <Contact/>
                 </Route>
+                <Route path="/michal">
+                    <Michal/>
+                </Route>
             </Switch>
             <footer className="footer">
                 <div className="content has-text-centered">
@@ -171,6 +174,17 @@ function Contact() {
                     Booking - booking@aniaolczyk.com<br/>
                     Reszta spraw - info@aniaolczyk.com
                 </p>
+            </div>
+        </section>
+    );
+}
+
+function Michal() {
+    return (
+        <section className="section">
+            <div className="container is-fluid">
+                <img className="mic" src="pin.jpg" width="500" height="500" />
+                <h1 className="rainbow rainbow_text_animated">MICHAŁ TO GEJ</h1>
             </div>
         </section>
     );
