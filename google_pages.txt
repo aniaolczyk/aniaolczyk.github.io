@@ -1,0 +1,9 @@
+<!--
+<PageMap>
+  <DataObject type="thumbnail">
+    <Attribute name="src" value="https://aniaolczyk.com/ania-olczyk-toksyk-single.jpg"/>
+    <Attribute name="width" value="100"/>
+    <Attribute name="height" value="100"/>
+  </DataObject>
+</PageMap>
+-->

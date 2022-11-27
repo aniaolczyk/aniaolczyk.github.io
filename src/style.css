@@ -88,6 +88,9 @@ a.navbar-item:focus-within {
   float: bottom;
   background: transparent !important;
 }
+.social-link {
+    padding: 5px;
+}
 @media screen and (min-width: 1023px) {
   .navbar-ania {
     padding: 0 64px;

@@ -36,24 +36,32 @@ export default function App() {
             </Switch>
             <footer className="footer">
                 <div className="content has-text-centered">
-                    <div className="footer-elem center">
-                        <InstaIcon/>
-                        <p className="footer-text"><a href="https://www.instagram.com/ania.olczyk.music/">ania.olczyk.music</a></p>
+                    <div className="footer-elem center social-link">
+                        <a href="https://www.instagram.com/ania.olczyk.music/">
+                            <InstaIcon/>
+                            <p className="footer-text">ania.olczyk.music</p>
+                        </a>
                         <br/>
                     </div>
-                    <div className="footer-elem center">
-                        <FacebookIcon/>
-                        <p className="footer-text"><a href="https://www.facebook.com/profile.php?id=100083688667584">Ania Olczyk</a></p>
+                    <div className="footer-elem center social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100083688667584">
+                            <FacebookIcon/>
+                            <p className="footer-text">Ania Olczyk</p>
+                        </a>
                         <br/>
                     </div>
-                    <div className="footer-elem center">
-                        <YouTubeIcon/>
-                        <p className="footer-text"><a href="https://www.youtube.com/@AniaOlczyk">Ania Olczyk</a></p>
+                    <div className="footer-elem center social-link">
+                        <a href="https://www.youtube.com/@AniaOlczyk">
+                            <YouTubeIcon/>
+                            <p className="footer-text">Ania Olczyk</p>
+                        </a>
                         <br/>
                     </div>
-                    <div className="footer-elem center">
-                        <SpotifyIcon/>
-                        <p className="footer-text"><a href="https://open.spotify.com/artist/1AfgDOc4Q0Z7LZpdQbU49y">Ania Olczyk</a></p>
+                    <div className="footer-elem center social-link">
+                        <a href="https://open.spotify.com/artist/1AfgDOc4Q0Z7LZpdQbU49y">
+                            <SpotifyIcon/>
+                            <p className="footer-text">Ania Olczyk</p>
+                        </a>
                         <br/>
                     </div>
                 </div>
@@ -71,26 +79,33 @@ function About() {
                 </h1>
                 <br/>
                 <br/>
-                <p className="subtitle text-toksyk">
+                <p className="subtitle text-toksyk center">
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/GzO8Hlp7pec"
+                            title="Toksyk - Ania Olczyk Youtube player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                    </iframe>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    Zapraszam do słuchania mojego nowego singla na <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">Spotify!</a>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">
                         <img
                             src="ania-olczyk-toksyk-single.jpg"
                             title="Ania Olczyk - Toksyk"
                             alt="Ania Olczyk - Toksyk Single cover art, rodzina na tle fotograficznym."
-                            width="500"
-                            height="500"
+                            width="800"
+                            height="800"
                         />
                     </a>
                     <br/>
-                    <br/>
-                    <br/>
-                    Zapraszam do słuchania mojego pierwszego singla lik do Spotify <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA">tu</a>
-                    <br/>
-                    Już dzisiaj o godzinie 18:00 na YouTube odbędzie się premiera teledysku.
-                    <br/>
                     Ania Olczyk - Toksyk<br/>
                     25.11.2022<br/>
-                    Godzina 18:00<br/>
                     <br/>
                     <br/>
                 </p>
