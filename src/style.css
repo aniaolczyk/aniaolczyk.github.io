@@ -91,6 +91,9 @@ a.navbar-item:focus-within {
 .social-link {
     padding: 5px;
 }
+.text-align-center {
+    text-align: center;
+}
 @media screen and (min-width: 1023px) {
   .navbar-ania {
     padding: 0 64px;

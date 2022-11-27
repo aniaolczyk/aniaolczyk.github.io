@@ -79,7 +79,7 @@ function About() {
                 </h1>
                 <br/>
                 <br/>
-                <p className="subtitle text-toksyk center">
+                <p className="subtitle text-toksyk center text-align-center">
                     <iframe width="1120" height="630" src="https://www.youtube.com/embed/GzO8Hlp7pec"
                             title="Toksyk - Ania Olczyk Youtube player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
