@@ -122,29 +122,109 @@ a.navbar-item:focus-within {
     border: 3px solid;
 }
 
-.rainbow {
-    text-align: center;
+/* Additional styles for streaming and contact links */
+.streaming-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
+}
+
+.streaming-link:hover {
+    color: #666;
     text-decoration: underline;
-    font-size: 100px;
-    font-family: monospace;
-    letter-spacing: 5px;
 }
-.rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+
+.contact-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+/* Video container for responsive videos */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Content wrapper for better spacing */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Rainbow text animation for Michał page */
+.rainbow {
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 3s ease-in-out infinite;
-    background-size: 400% 100%;
+    animation: rainbow 3s ease-in-out infinite;
 }
 
-@keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-    50% {
-        background-position: 100% 0;
+.rainbow_text_animated {
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbow 3s ease-in-out infinite;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+    .video-container {
+        margin: 15px 0;
+    }
+    
+    .content {
+        padding: 0 15px;
+    }
+    
+    .streaming-link,
+    .contact-link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-container {
+        margin: 10px 0;
+    }
+    
+    .content {
+        padding: 0 10px;
+    }
+    
+    .streaming-link,
+    .contact-link {
+        font-size: 14px;
     }
 }
 .mic {
