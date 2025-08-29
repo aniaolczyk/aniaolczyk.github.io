@@ -168,38 +168,8 @@
             position: relative;
             z-index: 1;
         }
+
         
-        /* Infinite scroll effect for content */
-        .infinite-scroll-container {
-            position: relative;
-            overflow: hidden;
-            min-height: 100vh;
-        }
-        
-        .infinite-scroll-content {
-            animation: scrollBackground 120s linear infinite;
-            will-change: transform;
-        }
-        
-        @keyframes scrollBackground {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-20%);
-            }
-        }
-        
-        /* Pause animation on hover and reduce motion preference */
-        .infinite-scroll-content:hover {
-            animation-play-state: paused;
-        }
-        
-        @media (prefers-reduced-motion: reduce) {
-            .infinite-scroll-content {
-                animation: none;
-            }
-        }
         
         .header-ania {
             font-family: var(--font-primary);
@@ -348,11 +318,6 @@
             border: 0;
         }
         
-        /* Focus styles for accessibility */
-        a:focus, button:focus {
-            outline: 2px solid #000;
-            outline-offset: 2px;
-        }
         
         /* Zara-style button typography */
         button, .button {

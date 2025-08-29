@@ -36,9 +36,9 @@ export default function App() {
             <footer className="footer">
                 <div className="content has-text-centered">
                     <div className="footer-elem center social-link">
-                        <a href="https://www.instagram.com/ania.olczyk.music/" target="_blank" rel="noopener" aria-label="Instagram Ania Olczyk">
+                        <a href="https://www.instagram.com/ania__olczyk" target="_blank" rel="noopener" aria-label="Instagram Ania Olczyk">
                             <InstaIcon/>
-                            <p className="footer-text">ania.olczyk.music</p>
+                            <p className="footer-text">ania__olczyk</p>
                         </a>
                         <br/>
                     </div>
