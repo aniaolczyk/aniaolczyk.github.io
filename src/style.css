@@ -46,7 +46,7 @@ a.navbar-item:focus-within {
 }
 .background-pic {
   background-image: linear-gradient(to bottom, rgba(255,255,255,0) 10%,
-          rgba(0,0,0,1)), url(bg.jpg);
+          rgba(0,0,0,1)), url(/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right top;

@@ -73,19 +73,15 @@ function About() {
     return (
         <section className="section" role="main" aria-label="O Ani Olczyk">
             <div className="container is-fluid">
-                <h1 className="title text-black text-uppercase font-bold">
-                    O Ani Olczyk
-                </h1>
                 <div className="content">
                     <p className="text-large">
-                        Ania Olczyk to polska artystka muzyczna wykonująca muzykę pop i indie pop. 
-                        Jej muzyka charakteryzuje się wrażliwością i umiejętnością opowiadania historii przez dźwięki.
-                    </p>
-                    <br/>
-                    <p className="text-large">
-                        Wokalistka, songwriterka. Lubi jeść i mówić. Uczy się słuchać, a jej teksty są przepełnione cudzymi historiami. 
-                        Wychowana na muzyce klasycznej, kochająca muzykę gospel i jej społeczność. 
-                        Dobrze poznała cudze, teraz odważyła się tworzyć własne utwory.
+                    Cześć!
+                    Z tej strony Ania Olczyk, miło mi, że tu jesteś. 
+                    Gram alternatywny pop, tak mi się wydaje. 
+                    Bo nie jest to na pewno czysty pop,
+                    A i do alternatywy mojej stylistyce jest daleko. 
+                    Uczę się być autentyczna i chcę się tym dzielić. 
+                    Moje piosenki to zbiór narracji moich i cudzych. Lubię wejść w rolę wewnętrznego głosu, przypatrywać się ustawieniom fabrycznym wypowiadanych podszeptów. Cieszę się z każdej nadszarpniętej struny u słuchacza, cieszę się z każdego głębszego wdechu i uśmiechu. Sprawcie mi tę radość i posłuchajcie moich piosenek. Może okażą się Waszym kilkuminutowym soundtrackiem w codzienności. 
                     </p>
                 </div>
             </div>
