@@ -66,21 +66,52 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <style>
+        /* Zara-style Typography System */
+        :root {
+            --font-primary: 'Helvetica Neue', 'Inter', Helvetica, Arial, sans-serif;
+            --font-secondary: 'Times New Roman', serif;
+            --font-weight-light: 300;
+            --font-weight-regular: 400;
+            --font-weight-medium: 500;
+            --font-weight-bold: 700;
+            --letter-spacing-tight: -0.02em;
+            --letter-spacing-normal: 0;
+            --letter-spacing-wide: 0.05em;
+        }
+        
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-regular);
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: var(--letter-spacing-normal);
             background: #000;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Headings - Zara style */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-medium);
+            letter-spacing: var(--letter-spacing-tight);
+            text-transform: uppercase;
+            line-height: 1.2;
         }
         
         .logo-header {
-            font-weight: 900;
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-bold);
             font-size: 7vw;
             text-align: center;
             color: #000;
             padding: 40px 0;
+            letter-spacing: var(--letter-spacing-tight);
+            text-transform: uppercase;
         }
         
         .navbar-ania {
@@ -96,8 +127,11 @@
         
         .navbar-ania-item {
             color: #000;
-            font-size: 18px;
-            font-weight: 400;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: var(--font-weight-regular);
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
         }
         
         .navbar-in {
@@ -107,7 +141,7 @@
         .navbar-ania-item:hover {
             background-color: transparent !important;
             color: #000 !important;
-            font-weight: 600;
+            font-weight: var(--font-weight-medium);
         }
         
         .background-pic {
@@ -116,7 +150,10 @@
         }
         
         .header-ania {
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-medium);
             text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wide);
         }
         
         .divider {
@@ -143,8 +180,11 @@
         
         .footer-text {
             display: inline;
-            font-weight: 700;
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-regular);
+            font-size: 14px;
             margin-left: 15px;
+            letter-spacing: var(--letter-spacing-normal);
         }
         
         .footer-text, .footer-text > a {
@@ -162,6 +202,42 @@
         
         .text-align-center {
             text-align: center;
+        }
+        
+        /* Zara-style typography classes */
+        .text-uppercase {
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wide);
+        }
+        
+        .text-small {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .text-large {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        
+        .font-light {
+            font-weight: var(--font-weight-light);
+        }
+        
+        .font-medium {
+            font-weight: var(--font-weight-medium);
+        }
+        
+        .font-bold {
+            font-weight: var(--font-weight-bold);
+        }
+        
+        .letter-spacing-wide {
+            letter-spacing: var(--letter-spacing-wide);
+        }
+        
+        .letter-spacing-tight {
+            letter-spacing: var(--letter-spacing-tight);
         }
         
         /* Responsive Design */
@@ -183,6 +259,28 @@
             .navbar {
                 min-height: 0;
             }
+            
+            .logo-header {
+                font-size: 12vw;
+            }
+            
+            .navbar-ania-item {
+                font-size: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            
+            .logo-header {
+                font-size: 15vw;
+            }
+            
+            .text-large {
+                font-size: 16px;
+            }
         }
         
         /* Accessibility improvements */
@@ -202,6 +300,30 @@
         a:focus, button:focus {
             outline: 2px solid #000;
             outline-offset: 2px;
+        }
+        
+        /* Zara-style button typography */
+        button, .button {
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-medium);
+            font-size: 14px;
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
+        }
+        
+        /* Zara-style link typography */
+        a {
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-regular);
+            letter-spacing: var(--letter-spacing-normal);
+        }
+        
+        /* Zara-style paragraph typography */
+        p {
+            font-family: var(--font-primary);
+            font-weight: var(--font-weight-regular);
+            line-height: 1.6;
+            letter-spacing: var(--letter-spacing-normal);
         }
     </style>
     
