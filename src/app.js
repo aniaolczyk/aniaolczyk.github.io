@@ -73,60 +73,20 @@ function About() {
     return (
         <section className="section" role="main" aria-label="O Ani Olczyk">
             <div className="container is-fluid">
-                <h1 className="title text-toksyk-dark text-uppercase font-bold">
-                    Ania Olczyk - Toksyk
+                <h1 className="title text-black text-uppercase font-bold">
+                    O Ani Olczyk
                 </h1>
-                <br/>
-                <br/>
-                <div className="subtitle text-toksyk center text-align-center">
-                    <div className="video-container">
-                        <iframe 
-                            width="1120" 
-                            height="630" 
-                            src="https://www.youtube.com/embed/GzO8Hlp7pec"
-                            title="Toksyk - Ania Olczyk Youtube player" 
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        />
-                    </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                <div className="content">
                     <p className="text-large">
-                        Zapraszam do słuchania mojego nowego singla na{' '}
-                        <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA" 
-                           target="_blank" 
-                           rel="noopener"
-                           className="streaming-link">
-                            Spotify!
-                        </a>
+                        Ania Olczyk to polska artystka muzyczna wykonująca muzykę pop i indie pop. 
+                        Jej muzyka charakteryzuje się wrażliwością i umiejętnością opowiadania historii przez dźwięki.
                     </p>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <a href="https://open.spotify.com/album/18nR5IKxIi7rQmoEDuR7Yh?si=pWL_1_HITb-Vd8bssq0JtA" 
-                       target="_blank" 
-                       rel="noopener"
-                       aria-label="Posłuchaj Toksyk na Spotify">
-                        <img
-                            src="ania-olczyk-toksyk-single.jpg"
-                            title="Ania Olczyk - Toksyk"
-                            alt="Ania Olczyk - Toksyk Single cover art, rodzina na tle fotograficznym."
-                            width="800"
-                            height="800"
-                            loading="lazy"
-                        />
-                    </a>
-                    <br/>
-                    <div className="single-info">
-                        <h2 className="single-title text-uppercase font-medium">Ania Olczyk - Toksyk</h2>
-                        <p className="single-year">25.11.2022</p>
-                    </div>
-                    <br/>
-                    <br/>
+                    <p className="text-large">
+                        Wokalistka, songwriterka. Lubi jeść i mówić. Uczy się słuchać, a jej teksty są przepełnione cudzymi historiami. 
+                        Wychowana na muzyce klasycznej, kochająca muzykę gospel i jej społeczność. 
+                        Dobrze poznała cudze, teraz odważyła się tworzyć własne utwory.
+                    </p>
                 </div>
             </div>
         </section>
