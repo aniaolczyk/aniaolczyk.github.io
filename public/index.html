@@ -145,8 +145,60 @@
         }
         
         .background-pic {
-            background: linear-gradient(to bottom, rgba(255,255,255,0) 40%, #fff), url(bg.jpg);
-            height: 600px;
+            background: url(background.jpg) no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Ensure full viewport coverage */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        /* Content overlay for better readability */
+        .content-overlay {
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Infinite scroll effect for content */
+        .infinite-scroll-container {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+        
+        .infinite-scroll-content {
+            animation: scrollBackground 120s linear infinite;
+            will-change: transform;
+        }
+        
+        @keyframes scrollBackground {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20%);
+            }
+        }
+        
+        /* Pause animation on hover and reduce motion preference */
+        .infinite-scroll-content:hover {
+            animation-play-state: paused;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .infinite-scroll-content {
+                animation: none;
+            }
         }
         
         .header-ania {
@@ -358,6 +410,12 @@
             align-items: start;
         }
         
+        .single-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
         .single-cover {
             position: relative;
         }
@@ -477,6 +535,86 @@
             border-color: #FA243C;
         }
         
+        /* Sidebar streaming links */
+        .streaming-links-sidebar {
+            margin-top: 0;
+        }
+        
+        .streaming-buttons-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .streaming-btn-sidebar {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: var(--font-weight-medium);
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 1px solid #000;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .streaming-btn-sidebar:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        
+        .streaming-btn-sidebar.spotify:hover {
+            background: #1DB954;
+            color: #fff;
+            border-color: #1DB954;
+        }
+        
+        .streaming-btn-sidebar.youtube:hover {
+            background: #FF0000;
+            color: #fff;
+            border-color: #FF0000;
+        }
+        
+        .streaming-btn-sidebar.tidal:hover {
+            background: #000000;
+            color: #fff;
+            border-color: #000000;
+        }
+        
+        .streaming-btn-sidebar.apple:hover {
+            background: #FA243C;
+            color: #fff;
+            border-color: #FA243C;
+        }
+        
+        /* Smaller video container */
+        .video-container-small {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 0;
+            padding-bottom: 33.75%; /* 16:9 aspect ratio but smaller */
+            margin: 20px 0;
+        }
+        
+        .video-container-small iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        
         /* Responsive Design for Singles */
         @media screen and (max-width: 768px) {
             .singles-section {
@@ -493,6 +631,14 @@
                 gap: 30px;
             }
             
+            .single-left {
+                order: 2;
+            }
+            
+            .single-info {
+                order: 1;
+            }
+            
             .single-cover img {
                 height: 250px;
             }
@@ -501,12 +647,20 @@
                 font-size: 1.5rem;
             }
             
-            .streaming-buttons {
-                flex-direction: column;
+            .streaming-buttons-sidebar {
+                flex-direction: row;
+                flex-wrap: wrap;
             }
             
-            .streaming-btn {
-                justify-content: center;
+            .streaming-btn-sidebar {
+                width: auto;
+                flex: 1;
+                min-width: 120px;
+            }
+            
+            .video-container-small {
+                max-width: 100%;
+                padding-bottom: 56.25%; /* Full 16:9 on mobile */
             }
         }
         
@@ -647,11 +801,17 @@
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="sr-only">Przejdź do głównej treści</a>
     
-    <div id="root"></div>
-    
-    <!-- Main content landmark for accessibility -->
-    <main id="main-content" role="main" aria-label="Główna treść strony">
-        <!-- Content will be dynamically loaded by React -->
-    </main>
+    <div class="content-overlay">
+        <div class="infinite-scroll-container">
+            <div class="infinite-scroll-content">
+                <div id="root"></div>
+                
+                <!-- Main content landmark for accessibility -->
+                <main id="main-content" role="main" aria-label="Główna treść strony">
+                    <!-- Content will be dynamically loaded by React -->
+                </main>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

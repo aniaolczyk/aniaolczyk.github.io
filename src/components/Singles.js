@@ -44,10 +44,10 @@ const Singles = () => {
       year: '2022',
       coverImage: '/covers/toksyk.jpg',
       youtubeVideoId: 'VIDEO_ID_PLACEHOLDER',
-      spotifyUrl: 'https://open.spotify.com/track/TRACK_ID_PLACEHOLDER',
-      youtubeMusicUrl: 'https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER',
+      spotifyUrl: 'https://open.spotify.com/track/7iwMnjjivF3FiUIymvMZfy',
+      youtubeMusicUrl: 'https://music.youtube.com/watch?v=DGVSi0LF4u0',
       tidalUrl: 'https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER',
-      appleMusicUrl: 'https://music.apple.com/pl/album/toksyk-single/ALBUM_ID_PLACEHOLDER',
+      appleMusicUrl: 'https://music.apple.com/pl/album/toksyk/1653125333?i=1653125349&l=pl',
       description: 'Debiutancki singiel \'Toksyk\' to opowieść o toksycznej relacji, gdzie Ania Olczyk pokazuje swoją wrażliwość i umiejętność opowiadania historii przez muzykę.'
     }
   ];
@@ -60,20 +60,39 @@ const Singles = () => {
         {singles.map((single) => (
           <article key={single.id} className="single-item" id={single.id}>
             <div className="single-content">
-              <div className="single-cover">
-                <img 
-                  src={single.coverImage} 
-                  alt={`Okładka singla ${single.title}`} 
-                  loading="lazy"
-                />
+              <div className="single-left">
+                <div className="single-cover">
+                  <img 
+                    src={single.coverImage} 
+                    alt={`Okładka singla ${single.title}`} 
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Streaming Links below cover */}
+                <div className="streaming-links-sidebar">
+                  <h4 className="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
+                  <div className="streaming-buttons-sidebar">
+                    <a href={single.spotifyUrl} target="_blank" rel="noopener" className="streaming-btn-sidebar spotify">
+                      <i className="fa fa-spotify"></i> Spotify
+                    </a>
+                    <a href={single.youtubeMusicUrl} target="_blank" rel="noopener" className="streaming-btn-sidebar youtube">
+                      <i className="fa fa-youtube"></i> YouTube Music
+                    </a>
+                    <a href={single.appleMusicUrl} target="_blank" rel="noopener" className="streaming-btn-sidebar apple">
+                      <i className="fa fa-apple"></i> Apple Music
+                    </a>
+                  </div>
+                </div>
               </div>
+              
               <div className="single-info">
                 <h3 className="single-title text-uppercase font-medium">{single.title}</h3>
                 <p className="single-year">{single.year}</p>
                 <p className="single-description">{single.description}</p>
                 
-                {/* YouTube Video */}
-                <div className="video-container">
+                {/* YouTube Video - Smaller size */}
+                <div className="video-container-small">
                   <iframe 
                     src={`https://www.youtube.com/embed/${single.youtubeVideoId}`}
                     title={`${single.title} - Ania Olczyk`}
@@ -81,25 +100,6 @@ const Singles = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowFullScreen
                   />
-                </div>
-                
-                {/* Streaming Links */}
-                <div className="streaming-links">
-                  <h4 className="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
-                  <div className="streaming-buttons">
-                    <a href={single.spotifyUrl} target="_blank" rel="noopener" className="streaming-btn spotify">
-                      <i className="fa fa-spotify"></i> Spotify
-                    </a>
-                    <a href={single.youtubeMusicUrl} target="_blank" rel="noopener" className="streaming-btn youtube">
-                      <i className="fa fa-youtube"></i> YouTube Music
-                    </a>
-                    <a href={single.tidalUrl} target="_blank" rel="noopener" className="streaming-btn tidal">
-                      <i className="fa fa-music"></i> Tidal
-                    </a>
-                    <a href={single.appleMusicUrl} target="_blank" rel="noopener" className="streaming-btn apple">
-                      <i className="fa fa-apple"></i> Apple Music
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>

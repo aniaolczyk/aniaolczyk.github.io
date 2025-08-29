@@ -15,5 +15,5 @@ git push
 echo "Successfully built website."
 echo "execute:
 gc master
-cp -r ../build .
+cp -r ../build/* .
 and push to deploy new code."
