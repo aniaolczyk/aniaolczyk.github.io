@@ -1,0 +1,48 @@
+{
+  "singles": [
+    {
+      "title": "Listy Miłosne",
+      "year": "2025",
+      "cover_image": "/covers/listy-milosne.jpg",
+      "youtube_video_id": "VIDEO_ID_PLACEHOLDER",
+      "spotify_url": "https://open.spotify.com/track/TRACK_ID_PLACEHOLDER",
+      "youtube_music_url": "https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER",
+      "tidal_url": "https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER",
+      "apple_music_url": "https://music.apple.com/pl/album/listy-mi%C5%82osne-single/ALBUM_ID_PLACEHOLDER",
+      "description": "Najnowszy singiel Ani Olczyk - 'Listy Miłosne' to opowieść o miłości w formie listów, gdzie każdy wers to osobista wiadomość do ukochanej osoby."
+    },
+    {
+      "title": "Zaćmienie '99",
+      "year": "2025",
+      "cover_image": "/covers/zacmienie-99.jpg",
+      "youtube_video_id": "VIDEO_ID_PLACEHOLDER",
+      "spotify_url": "https://open.spotify.com/track/TRACK_ID_PLACEHOLDER",
+      "youtube_music_url": "https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER",
+      "tidal_url": "https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER",
+      "apple_music_url": "https://music.apple.com/pl/album/za%C4%87mienie-99-single/ALBUM_ID_PLACEHOLDER",
+      "description": "'Zaćmienie '99' to nostalgiczna podróż do przeszłości, gdzie Ania Olczyk opowiada historię z perspektywy roku 1999, łącząc przeszłość z teraźniejszością."
+    },
+    {
+      "title": "Rumianki",
+      "year": "2023",
+      "cover_image": "/covers/rumianki.jpg",
+      "youtube_video_id": "VIDEO_ID_PLACEHOLDER",
+      "spotify_url": "https://open.spotify.com/track/TRACK_ID_PLACEHOLDER",
+      "youtube_music_url": "https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER",
+      "tidal_url": "https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER",
+      "apple_music_url": "https://music.apple.com/pl/album/rumianki-single/ALBUM_ID_PLACEHOLDER",
+      "description": "'Rumianki' to delikatna ballada o miłości i nadziei, gdzie Ania Olczyk wykorzystuje symbolikę rumianków jako metaforę czystości i niewinności uczuć."
+    },
+    {
+      "title": "Toksyk",
+      "year": "2022",
+      "cover_image": "/covers/toksyk.jpg",
+      "youtube_video_id": "VIDEO_ID_PLACEHOLDER",
+      "spotify_url": "https://open.spotify.com/track/TRACK_ID_PLACEHOLDER",
+      "youtube_music_url": "https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER",
+      "tidal_url": "https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER",
+      "apple_music_url": "https://music.apple.com/pl/album/toksyk-single/ALBUM_ID_PLACEHOLDER",
+      "description": "Debiutancki singiel 'Toksyk' to opowieść o toksycznej relacji, gdzie Ania Olczyk pokazuje swoją wrażliwość i umiejętność opowiadania historii przez muzykę."
+    }
+  ]
+}

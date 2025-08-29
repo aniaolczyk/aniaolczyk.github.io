@@ -325,6 +325,209 @@
             line-height: 1.6;
             letter-spacing: var(--letter-spacing-normal);
         }
+        
+        /* Singles Section Styling */
+        .singles-section {
+            background: #fff;
+            padding: 80px 0;
+            color: #000;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            letter-spacing: var(--letter-spacing-tight);
+        }
+        
+        .single-item {
+            margin-bottom: 100px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 60px;
+        }
+        
+        .single-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .single-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        .single-cover {
+            position: relative;
+        }
+        
+        .single-cover img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .single-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .single-title {
+            font-size: 2rem;
+            margin: 0;
+            letter-spacing: var(--letter-spacing-tight);
+        }
+        
+        .single-year {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 0;
+            font-weight: var(--font-weight-light);
+        }
+        
+        .single-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 0;
+            color: #333;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 20px 0;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        
+        .streaming-links {
+            margin-top: 20px;
+        }
+        
+        .streaming-title {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .streaming-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .streaming-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: var(--font-weight-medium);
+            letter-spacing: var(--letter-spacing-wide);
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 1px solid #000;
+        }
+        
+        .streaming-btn:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .streaming-btn.spotify:hover {
+            background: #1DB954;
+            color: #fff;
+            border-color: #1DB954;
+        }
+        
+        .streaming-btn.youtube:hover {
+            background: #FF0000;
+            color: #fff;
+            border-color: #FF0000;
+        }
+        
+        .streaming-btn.tidal:hover {
+            background: #000000;
+            color: #fff;
+            border-color: #000000;
+        }
+        
+        .streaming-btn.apple:hover {
+            background: #FA243C;
+            color: #fff;
+            border-color: #FA243C;
+        }
+        
+        /* Responsive Design for Singles */
+        @media screen and (max-width: 768px) {
+            .singles-section {
+                padding: 40px 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+            
+            .single-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .single-cover img {
+                height: 250px;
+            }
+            
+            .single-title {
+                font-size: 1.5rem;
+            }
+            
+            .streaming-buttons {
+                flex-direction: column;
+            }
+            
+            .streaming-btn {
+                justify-content: center;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .single-item {
+                margin-bottom: 60px;
+                padding-bottom: 40px;
+            }
+            
+            .single-cover img {
+                height: 200px;
+            }
+            
+            .single-title {
+                font-size: 1.3rem;
+            }
+            
+            .single-description {
+                font-size: 1rem;
+            }
+        }
     </style>
     
     <!-- Structured Data -->
@@ -376,15 +579,62 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MusicAlbum",
-        "name": "Toksyk",
-        "byArtist": {
-            "@type": "Person",
-            "name": "Ania Olczyk"
-        },
-        "genre": ["Pop", "Indie Pop", "Polish Music"],
+        "@type": "MusicGroup",
+        "name": "Ania Olczyk",
+        "url": "https://aniaolczyk.com",
         "image": "https://aniaolczyk.com/ania-olczyk-toksyk-single.jpg",
-        "description": "Singiel 'Toksyk' - debiutancki utwór Ani Olczyk"
+        "description": "Polska artystka muzyczna wykonująca muzykę pop i indie pop",
+        "genre": ["Pop", "Indie Pop", "Polish Music"],
+        "album": [
+            {
+                "@type": "MusicAlbum",
+                "name": "Listy Miłosne",
+                "byArtist": {
+                    "@type": "Person",
+                    "name": "Ania Olczyk"
+                },
+                "genre": ["Pop", "Indie Pop", "Polish Music"],
+                "image": "https://aniaolczyk.com/covers/listy-milosne.jpg",
+                "description": "Singiel 'Listy Miłosne' - najnowszy utwór Ani Olczyk",
+                "datePublished": "2025"
+            },
+            {
+                "@type": "MusicAlbum",
+                "name": "Zaćmienie '99",
+                "byArtist": {
+                    "@type": "Person",
+                    "name": "Ania Olczyk"
+                },
+                "genre": ["Pop", "Indie Pop", "Polish Music"],
+                "image": "https://aniaolczyk.com/covers/zacmienie-99.jpg",
+                "description": "Singiel 'Zaćmienie '99' - nostalgiczna podróż do przeszłości",
+                "datePublished": "2025"
+            },
+            {
+                "@type": "MusicAlbum",
+                "name": "Rumianki",
+                "byArtist": {
+                    "@type": "Person",
+                    "name": "Ania Olczyk"
+                },
+                "genre": ["Pop", "Indie Pop", "Polish Music"],
+                "image": "https://aniaolczyk.com/covers/rumianki.jpg",
+                "description": "Singiel 'Rumianki' - delikatna ballada o miłości i nadziei",
+                "datePublished": "2023"
+            },
+            {
+                "@type": "MusicAlbum",
+                "name": "Toksyk",
+                "byArtist": {
+                    "@type": "Person",
+                    "name": "Ania Olczyk"
+                },
+                "genre": ["Pop", "Indie Pop", "Polish Music"],
+                "image": "https://aniaolczyk.com/covers/toksyk.jpg",
+                "description": "Singiel 'Toksyk' - debiutancki utwór Ani Olczyk",
+                "datePublished": "2022"
+            }
+        ]
     }
     </script>
 </head>
@@ -402,7 +652,188 @@
     
     <!-- Main content landmark for accessibility -->
     <main id="main-content" role="main" aria-label="Główna treść strony">
-        <!-- Content will be dynamically loaded -->
+        <!-- Singles Section -->
+        <section class="singles-section" aria-label="Single Ani Olczyk">
+            <div class="container">
+                <h2 class="section-title text-uppercase font-bold">Single</h2>
+                
+                <!-- Listy Miłosne -->
+                <article class="single-item" id="listy-milosne">
+                    <div class="single-content">
+                        <div class="single-cover">
+                            <img src="/covers/listy-milosne.jpg" alt="Okładka singla Listy Miłosne" loading="lazy">
+                        </div>
+                        <div class="single-info">
+                            <h3 class="single-title text-uppercase font-medium">Listy Miłosne</h3>
+                            <p class="single-year">2025</p>
+                            <p class="single-description">Najnowszy singiel Ani Olczyk - 'Listy Miłosne' to opowieść o miłości w formie listów, gdzie każdy wers to osobista wiadomość do ukochanej osoby.</p>
+                            
+                            <!-- YouTube Video -->
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER" 
+                                    title="Listy Miłosne - Ania Olczyk"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Streaming Links -->
+                            <div class="streaming-links">
+                                <h4 class="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
+                                <div class="streaming-buttons">
+                                    <a href="https://open.spotify.com/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn spotify">
+                                        <i class="fa fa-spotify"></i> Spotify
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn youtube">
+                                        <i class="fa fa-youtube"></i> YouTube Music
+                                    </a>
+                                    <a href="https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn tidal">
+                                        <i class="fa fa-music"></i> Tidal
+                                    </a>
+                                    <a href="https://music.apple.com/pl/album/listy-mi%C5%82osne-single/ALBUM_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn apple">
+                                        <i class="fa fa-apple"></i> Apple Music
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Zaćmienie '99 -->
+                <article class="single-item" id="zacmienie-99">
+                    <div class="single-content">
+                        <div class="single-cover">
+                            <img src="/covers/zacmienie-99.jpg" alt="Okładka singla Zaćmienie '99" loading="lazy">
+                        </div>
+                        <div class="single-info">
+                            <h3 class="single-title text-uppercase font-medium">Zaćmienie '99</h3>
+                            <p class="single-year">2025</p>
+                            <p class="single-description">'Zaćmienie '99' to nostalgiczna podróż do przeszłości, gdzie Ania Olczyk opowiada historię z perspektywy roku 1999, łącząc przeszłość z teraźniejszością.</p>
+                            
+                            <!-- YouTube Video -->
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER" 
+                                    title="Zaćmienie '99 - Ania Olczyk"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Streaming Links -->
+                            <div class="streaming-links">
+                                <h4 class="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
+                                <div class="streaming-buttons">
+                                    <a href="https://open.spotify.com/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn spotify">
+                                        <i class="fa fa-spotify"></i> Spotify
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn youtube">
+                                        <i class="fa fa-youtube"></i> YouTube Music
+                                    </a>
+                                    <a href="https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn tidal">
+                                        <i class="fa fa-music"></i> Tidal
+                                    </a>
+                                    <a href="https://music.apple.com/pl/album/za%C4%87mienie-99-single/ALBUM_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn apple">
+                                        <i class="fa fa-apple"></i> Apple Music
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Rumianki -->
+                <article class="single-item" id="rumianki">
+                    <div class="single-content">
+                        <div class="single-cover">
+                            <img src="/covers/rumianki.jpg" alt="Okładka singla Rumianki" loading="lazy">
+                        </div>
+                        <div class="single-info">
+                            <h3 class="single-title text-uppercase font-medium">Rumianki</h3>
+                            <p class="single-year">2023</p>
+                            <p class="single-description">'Rumianki' to delikatna ballada o miłości i nadziei, gdzie Ania Olczyk wykorzystuje symbolikę rumianków jako metaforę czystości i niewinności uczuć.</p>
+                            
+                            <!-- YouTube Video -->
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER" 
+                                    title="Rumianki - Ania Olczyk"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Streaming Links -->
+                            <div class="streaming-links">
+                                <h4 class="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
+                                <div class="streaming-buttons">
+                                    <a href="https://open.spotify.com/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn spotify">
+                                        <i class="fa fa-spotify"></i> Spotify
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn youtube">
+                                        <i class="fa fa-youtube"></i> YouTube Music
+                                    </a>
+                                    <a href="https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn tidal">
+                                        <i class="fa fa-music"></i> Tidal
+                                    </a>
+                                    <a href="https://music.apple.com/pl/album/rumianki-single/ALBUM_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn apple">
+                                        <i class="fa fa-apple"></i> Apple Music
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Toksyk -->
+                <article class="single-item" id="toksyk">
+                    <div class="single-content">
+                        <div class="single-cover">
+                            <img src="/covers/toksyk.jpg" alt="Okładka singla Toksyk" loading="lazy">
+                        </div>
+                        <div class="single-info">
+                            <h3 class="single-title text-uppercase font-medium">Toksyk</h3>
+                            <p class="single-year">2022</p>
+                            <p class="single-description">Debiutancki singiel 'Toksyk' to opowieść o toksycznej relacji, gdzie Ania Olczyk pokazuje swoją wrażliwość i umiejętność opowiadania historii przez muzykę.</p>
+                            
+                            <!-- YouTube Video -->
+                            <div class="video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/VIDEO_ID_PLACEHOLDER" 
+                                    title="Toksyk - Ania Olczyk"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <!-- Streaming Links -->
+                            <div class="streaming-links">
+                                <h4 class="streaming-title text-uppercase font-medium">Słuchaj na:</h4>
+                                <div class="streaming-buttons">
+                                    <a href="https://open.spotify.com/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn spotify">
+                                        <i class="fa fa-spotify"></i> Spotify
+                                    </a>
+                                    <a href="https://music.youtube.com/watch?v=VIDEO_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn youtube">
+                                        <i class="fa fa-youtube"></i> YouTube Music
+                                    </a>
+                                    <a href="https://tidal.com/browse/track/TRACK_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn tidal">
+                                        <i class="fa fa-music"></i> Tidal
+                                    </a>
+                                    <a href="https://music.apple.com/pl/album/toksyk-single/ALBUM_ID_PLACEHOLDER" target="_blank" rel="noopener" class="streaming-btn apple">
+                                        <i class="fa fa-apple"></i> Apple Music
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
     
     <!-- Scripts -->
