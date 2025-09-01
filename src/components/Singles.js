@@ -3,6 +3,28 @@ import React from 'react';
 const Singles = () => {
   const singles = [
     {
+      id: 'klocki-ego',
+      title: 'Klocki Ego',
+      year: '2025',
+      coverImage: '/covers/ego.jpg',
+      youtubeVideoId: 'fyMH6M0C-Tk',
+      spotifyUrl: 'https://open.spotify.com/album/0Y8HhwkKwyVfcYALROfoGD?si=19MdoSaaSZGwTFWvjEIf1Q',
+      youtubeMusicUrl: 'https://music.youtube.com/watch?v=YznqqpX3T6o',
+      appleMusicUrl: 'https://music.apple.com/us/album/klocki-ego-single/1832070269',
+      description: ''
+    },
+    {
+      id: 'listy-milosne',
+      title: 'Listy Miłosne',
+      year: '2025',
+      coverImage: '/covers/listy-milosne.jpg',
+      youtubeVideoId: 'fyMH6M0C-Tk',
+      spotifyUrl: 'https://open.spotify.com/track/2nQKXRkle7QhOu8Dl6ygOz',
+      youtubeMusicUrl: 'https://music.youtube.com/watch?v=6FItDaeNASs',
+      appleMusicUrl: 'https://music.apple.com/pl/album/listy-mi%C5%82osne/1818531809?i=1818531810&l=pl',
+      description: ''
+    },
+    {
       id: 'zacmienie-99',
       title: 'Zaćmienie \'99',
       year: '2025',
