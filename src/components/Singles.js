@@ -3,17 +3,6 @@ import React from 'react';
 const Singles = () => {
   const singles = [
     {
-      id: 'listy-milosne',
-      title: 'Listy Miłosne',
-      year: '2025',
-      coverImage: '/covers/listy-milosne.jpg',
-      youtubeVideoId: 'fyMH6M0C-Tk',
-      spotifyUrl: 'https://open.spotify.com/track/2nQKXRkle7QhOu8Dl6ygOz',
-      youtubeMusicUrl: 'https://music.youtube.com/watch?v=6FItDaeNASs',
-      appleMusicUrl: 'https://music.apple.com/pl/album/listy-mi%C5%82osne/1818531809?i=1818531810&l=pl',
-      description: 'Najnowszy singiel Ani Olczyk - \'Listy Miłosne\' to opowieść o miłości w formie listów, gdzie każdy wers to osobista wiadomość do ukochanej osoby.'
-    },
-    {
       id: 'zacmienie-99',
       title: 'Zaćmienie \'99',
       year: '2025',
@@ -22,7 +11,7 @@ const Singles = () => {
       spotifyUrl: 'https://open.spotify.com/track/3g87eKym3fy8V4R6SRwX4o',
       youtubeMusicUrl: 'https://music.youtube.com/watch?v=dnB5IE1VvTw',
       appleMusicUrl: 'https://music.apple.com/pl/album/za%C4%87mienie-99/1813390932?i=1813390933&l=pl',
-      description: '\'Zaćmienie \'99\' to nostalgiczna podróż do przeszłości, gdzie Ania Olczyk opowiada historię z perspektywy roku 1999, łącząc przeszłość z teraźniejszością.'
+      description: ''
     },
     {
       id: 'rumianki',
@@ -33,7 +22,7 @@ const Singles = () => {
       spotifyUrl: 'https://open.spotify.com/track/422Uq4fEQTN7yKTgAIT1r0',
       youtubeMusicUrl: 'https://music.youtube.com/watch?v=PyEcvTY-uQU',
       appleMusicUrl: 'https://music.apple.com/pl/album/rumianki/1690564940?i=1690564946&l=pl',
-      description: '\'Rumianki\' to delikatna ballada o miłości i nadziei, gdzie Ania Olczyk wykorzystuje symbolikę rumianków jako metaforę czystości i niewinności uczuć.'
+      description: ''
     },
     {
       id: 'toksyk',
@@ -44,7 +33,7 @@ const Singles = () => {
       spotifyUrl: 'https://open.spotify.com/track/7iwMnjjivF3FiUIymvMZfy',
       youtubeMusicUrl: 'https://music.youtube.com/watch?v=DGVSi0LF4u0',
       appleMusicUrl: 'https://music.apple.com/pl/album/toksyk/1653125333?i=1653125349&l=pl',
-      description: 'Debiutancki singiel \'Toksyk\' to opowieść o toksycznej relacji, gdzie Ania Olczyk pokazuje swoją wrażliwość i umiejętność opowiadania historii przez muzykę.'
+      description: ''
     }
   ];
 
