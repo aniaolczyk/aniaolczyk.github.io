@@ -7,7 +7,7 @@ const Singles = () => {
       title: 'Klocki Ego',
       year: '2025',
       coverImage: '/covers/ego.jpg',
-      youtubeVideoId: 'fyMH6M0C-Tk',
+      // youtubeVideoId: '0lCvE87M9Zg',
       spotifyUrl: 'https://open.spotify.com/album/0Y8HhwkKwyVfcYALROfoGD?si=19MdoSaaSZGwTFWvjEIf1Q',
       youtubeMusicUrl: 'https://music.youtube.com/watch?v=YznqqpX3T6o',
       appleMusicUrl: 'https://music.apple.com/us/album/klocki-ego-single/1832070269',
