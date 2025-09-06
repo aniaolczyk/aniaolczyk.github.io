@@ -82,17 +82,17 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
                 onSubmit={handleSubmit}
               >
                 <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Imię"
                   required
                   className="email-input"
                 />
                 <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Imię"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email"
                   required
                   className="email-input"
                 />
