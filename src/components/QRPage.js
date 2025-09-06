@@ -2,21 +2,28 @@ import { React, useState } from 'react';
 
 const QRPage = () => {
     const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    const form = e.target;
 
-    // Post data to Getform
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      mode: 'no-cors', // Getform supports this for client-side forms
-    }).then(() => setSubmitted(true))
-      .catch(() => alert('Submission failed. Please try again.'));
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
 
+    try {
+      fetch('https://formcare.io/api/submit/7sNFVfWaxMU7', {
+        method: 'POST',
+        body: formData,
+      });
+      setSubmitted(true);
+      setName('');
+      setEmail('');
+    } catch (err) {
+      alert('Submission failed, please try again.');
+      console.error(err);
+    }
   };
   return (
     <section className="singles-section qr-section" aria-label="Single Ani Olczyk">
@@ -69,7 +76,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
               <p className="thank-you-message">Dzięki!</p>
             ) : (
               <form
-                action="https://www.form-to-email.com/api/s/Asv0uUByS8ra"
+                action="https://formcare.io/api/submit/7sNFVfWaxMU7"
                 method="POST"
                 className="email-form"
                 onSubmit={handleSubmit}
@@ -79,6 +86,13 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
+                  required
+                  className="email-input"
+                />
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Imię"
                   required
                   className="email-input"
                 />
