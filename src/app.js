@@ -7,6 +7,7 @@ import {
 import "./style.css"
 import Nav from "./nav";
 import Singles from "./components/Singles";
+import QRPage from "./components/QRPage";
 
 export default function App() {
     return (
@@ -29,8 +30,8 @@ export default function App() {
                 <Route path="/contact">
                     <Contact/>
                 </Route>
-                <Route path="/michal">
-                    <Michal/>
+                <Route path="/qr">
+                    <QRPage/>
                 </Route>
             </Switch>
             <footer className="footer">
@@ -201,24 +202,6 @@ function Contact() {
                         </a>
                     </p>
                 </div>
-            </div>
-        </section>
-    );
-}
-
-function Michal() {
-    return (
-        <section className="section" role="main" aria-label="Michał">
-            <div className="container is-fluid">
-                <img 
-                    className="mic" 
-                    src="pin.jpg" 
-                    width="500" 
-                    height="500" 
-                    alt="Michał"
-                    loading="lazy"
-                />
-                <h1 className="rainbow rainbow_text_animated text-uppercase font-bold">MICHAŁ TO GEJ</h1>
             </div>
         </section>
     );
