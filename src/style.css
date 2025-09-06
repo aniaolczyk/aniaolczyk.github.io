@@ -112,7 +112,11 @@ a.navbar-item:focus-within {
   padding: 2rem;
   box-sizing: border-box;
 }
-
+.spotify-embed {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 .qr-layout {
   display: flex;
   flex-direction: column;
@@ -149,7 +153,12 @@ a.navbar-item:focus-within {
   }
 
   .qr-video {
+    margin-top: 20px;
     flex: 1;
+  }
+
+  .qr-video h2 {
+    margin-bottom: 10px;
   }
 
   .qr-video iframe {
