@@ -1,7 +1,24 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './QRPage.css';
 
 const QRPage = () => {
+    const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const form = e.target;
+
+    // Post data to Getform
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      mode: 'no-cors', // Getform supports this for client-side forms
+    }).then(() => setSubmitted(true))
+      .catch(() => alert('Submission failed. Please try again.'));
+
+  };
   return (
     <section className="singles-section qr-section" aria-label="Single Ani Olczyk">
       <div className="container qr-container">
@@ -45,7 +62,31 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
             loading="lazy"
             title="Spotify Artist"
           />
-
+        </div>
+        <div>
+          <div className="form-container">
+            <h2 className="form-title">Bądź na bieżąco</h2>
+            {submitted ? (
+              <p className="thank-you-message">Dzięki!</p>
+            ) : (
+              <form
+                action="https://getform.io/f/aejevjyb"
+                method="POST"
+                className="email-form"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email"
+                  required
+                  className="email-input"
+                />
+                <button type="submit" className="submit-button">Subskrybuj</button>
+              </form>
+            )}
+          </div>
         </div>
       </div>
     </section>

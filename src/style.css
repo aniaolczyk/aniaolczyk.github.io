@@ -142,6 +142,69 @@ a.navbar-item:focus-within {
   border: none;
 }
 
+.form-container {
+background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  margin-top: 25px;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 25px;
+}
+
+.form-title {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  background: #121212;
+  color: white;
+}
+
+.email-input:focus {
+  border-color: #000;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f7ef8a;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.submit-button:hover {
+  background-color: #d7cf6a;
+}
+
+.thank-you-message {
+  font-size: 18px;
+  color: #d7cf6a;
+  margin-top: 20px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .qr-layout {
     flex-direction: row;
