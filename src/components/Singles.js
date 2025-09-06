@@ -60,8 +60,19 @@ const Singles = () => {
   ];
 
   return (
-    <section className="singles-section" aria-label="Single Ani Olczyk">
-      <div className="container">
+    <section className="singles-section qr-section" aria-label="Single Ani Olczyk">
+      <div className="container qr-container">
+        <div className="content">
+            <p className="text-large">
+            Cześć!
+            Z tej strony Ania Olczyk, miło mi, że tu jesteś. 
+            Gram alternatywny pop, tak mi się wydaje. 
+            Bo nie jest to na pewno czysty pop,
+            A i do alternatywy mojej stylistyce jest daleko. 
+            Uczę się być autentyczna i chcę się tym dzielić. 
+            Moje piosenki to zbiór narracji moich i cudzych. Lubię wejść w rolę wewnętrznego głosu, przypatrywać się ustawieniom fabrycznym wypowiadanych podszeptów. Cieszę się z każdej nadszarpniętej struny u słuchacza, cieszę się z każdego głębszego wdechu i uśmiechu. Sprawcie mi tę radość i posłuchajcie moich piosenek. Może okażą się Waszym kilkuminutowym soundtrackiem w codzienności. 
+            </p>
+        </div>
         <h2 className="section-title text-uppercase font-bold">Single</h2>
         
         {singles.map((single) => (

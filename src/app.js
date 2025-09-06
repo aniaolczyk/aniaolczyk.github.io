@@ -73,7 +73,7 @@ export default function App() {
 function About() {
     return (
         <section className="section" role="main" aria-label="O Ani Olczyk">
-            <div className="container is-fluid">
+            <div className="container qr-container is-fluid">
                 <div className="content">
                     <p className="text-large">
                     Cześć!
@@ -93,7 +93,6 @@ function About() {
 function Home() {
     return (
         <div>
-            <About/>
             <Singles/>
         </div>
     );
