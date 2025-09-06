@@ -69,7 +69,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
               <p className="thank-you-message">Dzięki!</p>
             ) : (
               <form
-                action="https://getform.io/f/aejevjyb"
+                action="https://www.form-to-email.com/api/s/Asv0uUByS8ra"
                 method="POST"
                 className="email-form"
                 onSubmit={handleSubmit}
