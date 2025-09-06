@@ -99,23 +99,24 @@ a.navbar-item:focus-within {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem;
   color: #fff;
 }
 
 .qr-container {
   width: 100%;
-  height: -webkit-fill-available;
   max-width: 1000px;
   background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
   border-radius: 16px;
   padding: 2rem;
   box-sizing: border-box;
 }
-.spotify-embed {
+.qr-70 {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .qr-layout {
   display: flex;
@@ -148,10 +149,10 @@ background-color: #1a1a1a;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
   margin-top: 25px;
   padding: 20px;
-  width: 70%;
   margin: 0 auto;
   margin-top: 0px;
   margin-top: 25px;
+  width: 100%;
 }
 
 .form-title {
@@ -354,7 +355,18 @@ background-color: #1a1a1a;
     .contact-link {
         font-size: 16px;
     }
+    .qr-70 {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .qr-section {
+      padding: 0;
+    }
+    .qr-container {
+      padding: 1rem;
+    } 
 }
+
 
 @media screen and (max-width: 480px) {
     .video-container {
@@ -371,6 +383,16 @@ background-color: #1a1a1a;
     .contact-link {
         font-size: 14px;
     }
+    .qr-70 {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .qr-section {
+      padding: 0;
+    }
+    .qr-container {
+      padding: 1rem;
+    } 
 }
 .mic {
     display:block;

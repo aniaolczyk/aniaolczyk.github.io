@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import './QRPage.css';
 
 const QRPage = () => {
     const [email, setEmail] = useState('');
@@ -52,10 +51,10 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
             />
           </div>
         </div>
-        <div class="spotify-embed">
+        <div class="qr-70">
           <iframe
             src="https://open.spotify.com/embed/artist/1AfgDOc4Q0Z7LZpdQbU49y?utm_source=generator&theme=0"
-            style={{ borderRadius: '12px', width: '70%', height: '352px', marginTop: '25px' }}
+            style={{ borderRadius: '12px', width: '100%', height: '352px', marginTop: '25px' }}
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
@@ -63,7 +62,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
             title="Spotify Artist"
           />
         </div>
-        <div>
+        <div class="qr-70">
           <div className="form-container">
             <h2 className="form-title">Bądź na bieżąco</h2>
             {submitted ? (
