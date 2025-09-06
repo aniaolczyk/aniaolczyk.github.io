@@ -86,6 +86,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Imię"
                   required
+                  autocomplete="given-name"
                   className="email-input"
                 />
                 <input
@@ -94,6 +95,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   required
+                  autocomplete="email"
                   className="email-input"
                 />
                 <button type="submit" className="submit-button">Subskrybuj</button>
