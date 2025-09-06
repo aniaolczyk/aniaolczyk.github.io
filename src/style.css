@@ -94,6 +94,70 @@ a.navbar-item:focus-within {
 .text-align-center {
     text-align: center;
 }
+.qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+}
+
+.qr-container {
+  width: 100%;
+  height: -webkit-fill-available;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
+  border-radius: 16px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.qr-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.qr-info h2, .qr-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.qr-info p {
+  margin-bottom: 1rem;
+}
+
+.qr-info a {
+  color: #ffd700;
+}
+
+.qr-video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .qr-layout {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .qr-info {
+    flex: 1;
+  }
+
+  .qr-video {
+    flex: 1;
+  }
+
+  .qr-video iframe {
+    height: 100%;
+    min-height: 300px;
+  }
+}
+
 @media screen and (min-width: 1023px) {
   .navbar-ania {
     padding: 0 64px;
@@ -198,11 +262,18 @@ a.navbar-item:focus-within {
 }
 
 /* Responsive improvements */
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
     .video-container {
         margin: 15px 0;
     }
-    
+    .container {
+      margin: 20px;
+    }
     .content {
         padding: 0 15px;
     }
@@ -217,7 +288,9 @@ a.navbar-item:focus-within {
     .video-container {
         margin: 10px 0;
     }
-    
+    .container {
+      margin: 20px;
+    }
     .content {
         padding: 0 10px;
     }

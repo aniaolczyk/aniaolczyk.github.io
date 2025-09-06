@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
@@ -11,7 +11,7 @@ import QRPage from "./components/QRPage";
 
 export default function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Nav/>
             <div className="divider"></div>
             <Switch>
