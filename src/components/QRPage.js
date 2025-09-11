@@ -49,13 +49,13 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
           </div>
           <div className="qr-video">
             <h2>Nagranie Live:</h2>
-            <iframe 
-              src={`https://www.youtube.com/embed/0lCvE87M9Zg`}
+          <iframe 
+            style={{ borderRadius: '12px', width: '100%', height: '352px', marginTop: '25px' }}  
+             src="https://www.youtube.com/embed/videoseries?si=n-tEdYx77ETZGVVT&amp;list=PLSGPJHBVDzmvZ6OZqqJh5DV0ki0S-8HqE"
               title={`Live Session - Ania Olczyk`}
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            />
+              allowFullScreen></iframe>
           </div>
         </div>
         <div class="qr-70">
