@@ -61,7 +61,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
         <div class="qr-70">
           <iframe
             src="https://open.spotify.com/embed/artist/1AfgDOc4Q0Z7LZpdQbU49y?utm_source=generator&theme=0"
-            style={{ borderRadius: '12px', width: '100%', height: '346px', marginTop: '25px' }}
+            style={{ borderRadius: '12px', width: '100%', height: '360px', marginTop: '25px' }}
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
