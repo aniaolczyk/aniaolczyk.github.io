@@ -50,7 +50,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
           <div className="qr-video">
             <h2>Nagranie Live (Great September exclusive):</h2>
           <iframe 
-            style={{ borderRadius: '12px', width: '100%', height: '352px', marginTop: '25px' }}  
+            style={{ borderRadius: '12px', width: '100%', height: '346px', marginTop: '25px' }}  
              src="https://www.youtube.com/embed/videoseries?si=n-tEdYx77ETZGVVT&amp;list=PLSGPJHBVDzmvZ6OZqqJh5DV0ki0S-8HqE"
               title={`Live Session - Ania Olczyk`}
               frameBorder="0" 
@@ -61,7 +61,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
         <div class="qr-70">
           <iframe
             src="https://open.spotify.com/embed/artist/1AfgDOc4Q0Z7LZpdQbU49y?utm_source=generator&theme=0"
-            style={{ borderRadius: '12px', width: '100%', height: '352px', marginTop: '25px' }}
+            style={{ borderRadius: '12px', width: '100%', height: '346px', marginTop: '25px' }}
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
