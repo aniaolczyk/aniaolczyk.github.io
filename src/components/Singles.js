@@ -66,10 +66,12 @@ const Singles = () => {
             <p className="text-large">
             Cześć!
             Z tej strony Ania Olczyk, miło mi, że tu jesteś. 
-            Gram alternatywny pop, tak mi się wydaje. 
-            Bo nie jest to na pewno czysty pop,
-            A i do alternatywy mojej stylistyce jest daleko. 
-            Uczę się być autentyczna i chcę się tym dzielić. 
+            Piszę piosenki, które słuchają Ciebie. 
+            Moja muzyka balansuje między organicznym brzmieniem a elektroniką, 
+            od gitar i perkusji po syntezatory i chórki, ale najważniejsze są w niej słowa:
+            intymne, szczere i pełne obserwacji.
+            To Alternatywny Pop, który wymaga uwagi. Na scenie szukam bliskości.
+            Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.
             Moje piosenki to zbiór narracji moich i cudzych. Lubię wejść w rolę wewnętrznego głosu, przypatrywać się ustawieniom fabrycznym wypowiadanych podszeptów. Cieszę się z każdej nadszarpniętej struny u słuchacza, cieszę się z każdego głębszego wdechu i uśmiechu. Sprawcie mi tę radość i posłuchajcie moich piosenek. Może okażą się Waszym kilkuminutowym soundtrackiem w codzienności. 
             </p>
         </div>
