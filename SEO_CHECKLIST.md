@@ -32,7 +32,7 @@
 ## ✅ Meta Tags
 
 ### Primary Meta Tags
-- [x] **Title tag** - "Ania Olczyk | Muzyka Pop | Polski Artysta | Toksyk"
+- [x] **Title tag** - "Ania Olczyk | Piosenki, które słuchają Ciebie"
 - [x] **Meta description** - Compelling 160-character description
 - [x] **Meta keywords** - Relevant Polish music keywords
 - [x] **Meta author** - Ania Olczyk

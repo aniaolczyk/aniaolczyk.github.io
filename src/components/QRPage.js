@@ -48,7 +48,7 @@ Chcę, żeby słuchacz poczuł się częścią tej samej opowieści.</p>
             </p>
           </div>
           <div className="qr-video">
-            <h2>Nagranie Live:</h2>
+            <h2>Nagranie Live (Great September exclusive):</h2>
           <iframe 
             style={{ borderRadius: '12px', width: '100%', height: '352px', marginTop: '25px' }}  
              src="https://www.youtube.com/embed/videoseries?si=n-tEdYx77ETZGVVT&amp;list=PLSGPJHBVDzmvZ6OZqqJh5DV0ki0S-8HqE"
